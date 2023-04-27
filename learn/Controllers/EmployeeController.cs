@@ -28,7 +28,15 @@ namespace learn.Controllers
                             join department in dbContext.Departments on employee.DepartmentId equals department.DepartmentId
                             select new Employee
                             {
-                             
+                              EmployeeId= employee.EmployeeId,
+                                EmployeeNumber = employee.EmployeeNumber,
+                                DOB = employee.DOB,
+                                HiringDate = employee.HiringDate,
+                                GrossSalary = employee.GrossSalary,
+                                NetSalary = employee.NetSalary,
+                                DepartmentId = employee.DepartmentId,
+                                DepartmentName = department.DepartmentName
+
                             }).ToList();
 
 
