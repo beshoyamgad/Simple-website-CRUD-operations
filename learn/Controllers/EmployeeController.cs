@@ -29,7 +29,6 @@ namespace learn.Controllers
                             select new Employee
                             {
                               
-                                EmployeeName = employee.EmployeeName,
                                 EmployeeNumber = employee.EmployeeNumber,
                                 DOB = employee.DOB,
                                 HiringDate = employee.HiringDate,
